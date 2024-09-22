@@ -1,0 +1,34 @@
+AutoDidacticHeuristicDiagram:
+	A Web Accessible Dashboard that scrapes and gathers information on a set of subscribed subjects as well as a section
+	for "Currently Hot Subjects" with the functionality to add said subject to the roster
+	Requirements:
+		Web Accessible
+		Free
+		Easy to add subjects
+		Private to edit
+		Secure
+	Minimal Features:
+		Gathering data on subscribed subject utilizing a whitelist/blacklist of sources
+		Display data on a web dashboard: Subject, source, citation(if possible), url
+		Editing of code and subjects only available to me
+		Current in material: Checks if all urls are still functional
+		Subjects primarily academic
+		Databases to be able to be migrated at all times
+		Web hosted.
+	Maximal Features:
+		Gathers data from primarily the whitelist/blacklist with the ability to inference new reliable services, and prompt to add to white list or black list
+		Data is capable of multiple displays including abstracts, graphs, and screenshots of the website
+		Dashboard able to be abstracted to be able to have instances for various users.
+		Ran off personal server for my instance only.
+		Data allowed to have different shapes: One shape for academics, one for metrics, another for tracking a person or place
+	
+	Tools Required:
+		Web Scraper capable of scraping the URL, citation information, and title of article BeautifulSoup, Selenium
+		Database for whitelist/blacklist SQLite
+		API access for some sources Requests, Specific SDKS
+		Task Queue for services. Celery/Redis
+		Datalake for acquired content
+		Tool for digesting said content
+		Database for digested content
+		Frontend for displaying content/ React
+
